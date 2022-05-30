@@ -9,3 +9,6 @@ In your terminal run \
 Commit all and then
 `gh repo create --public --source=.`
 `git push origin main`
+
+# Import NPM package
+`./bin/importmap pin lodash`
