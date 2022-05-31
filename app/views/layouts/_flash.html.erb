@@ -1,7 +1,11 @@
 <% flash.each do |flash_type, message| %>
   <div
-    class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+    class="flex justify-center items-center space-x-2"
+    data-controller="removals"
+    data-action="animationend->removals#remove"
   >
-    <%= message %>
+    <div class="top-0 bg-black text-white rounded-lg animate-fade-in-down">
+      <%= message %>
+    </div>
   </div>
 <% end %>
